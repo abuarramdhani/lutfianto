@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 07, 2019 at 04:42 PM
+-- Generation Time: Jul 07, 2019 at 04:51 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -119,7 +119,8 @@ INSERT INTO `malindo_session` (`urut`, `id`, `ip_address`, `timestamp`, `data`) 
 (1420, 'v0p3pimno1tgd3dt4s1f60l6bq984ldk', '::1', 1562509473, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323530393137393b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b6b6f6465787c733a333a22303031223b),
 (1422, '1dpn6o5vmh7pbh8o9rs8qiq3fsi8efva', '::1', 1562509945, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323530393632303b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b6b6f6465787c733a333a22303031223b6b6f64655f6d656d6265727c733a363a224d2d30303031223b6b6f64655f626f6f6b696e677c733a31353a223030312d424f2d4d414c2d30373139223b),
 (1423, '5j8fakuclq0l345d5fl4id5p0str2nta', '::1', 1562510312, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323530393939383b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b6b6f6465787c733a333a22303031223b6b6f64655f6d656d6265727c733a363a224d2d30303031223b6b6f64655f626f6f6b696e677c733a31353a223030312d424f2d4d414c2d30373139223b),
-(1425, 'kqqkbftmv2k1u23ja9rl3e9o6h3ev5u2', '::1', 1562510544, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323531303438373b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b);
+(1425, 'kqqkbftmv2k1u23ja9rl3e9o6h3ev5u2', '::1', 1562510627, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323531303438373b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b),
+(1426, 'tn797vk47r66np0qbqnmqkbn99n5chao', '::1', 1562511092, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323531303936323b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b);
 
 -- --------------------------------------------------------
 
@@ -90073,6 +90074,13 @@ CREATE TABLE `tbl_news` (
   `publish` int(1) NOT NULL DEFAULT '0' COMMENT '1=Publish 0=NoPublish'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `tbl_news`
+--
+
+INSERT INTO `tbl_news` (`id`, `berita`, `oleh`, `tgl_dibuat`, `tgl_selesai`, `publish`) VALUES
+(1, 'Jangan lupa untuk servis berkala', '001', '2019-07-07', '2020-07-24', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -90374,6 +90382,7 @@ INSERT INTO `tbl_submenu` (`smenu_id`, `parent`, `nama_smenu`, `slink`, `sicon`,
 (11, 4, 'Penyewaan', 'sewa', '#', 0, 1, 1),
 (12, 4, 'Pengembalian', 'pengembalian', '#', 0, 1, 1),
 (13, 4, 'Pemeliharaan', 'pemeliharaan', '#', 0, 1, 1),
+(14, 2, 'Papan Informasi', 'news', '#', 0, 1, 1),
 (15, 6, 'Setting', '#', '#', 1, 1, 1),
 (16, 6, 'Background Login', 'ganti_bg', '#', 0, 1, 1),
 (17, 6, 'Hak Akses', 'hak_akses', '#', 0, 0, 1),
@@ -91446,7 +91455,7 @@ ALTER TABLE `tbl_warna`
 -- AUTO_INCREMENT for table `malindo_session`
 --
 ALTER TABLE `malindo_session`
-  MODIFY `urut` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1426;
+  MODIFY `urut` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1427;
 
 --
 -- AUTO_INCREMENT for table `tbl_barang_stok`
@@ -91536,7 +91545,7 @@ ALTER TABLE `tbl_merk`
 -- AUTO_INCREMENT for table `tbl_news`
 --
 ALTER TABLE `tbl_news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tbl_pekerjaan`
