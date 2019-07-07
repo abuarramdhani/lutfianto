@@ -99,12 +99,12 @@ define ('PDF_PAGE_ORIENTATION', 'P');
 /**
  * Document creator.
  */
-define ('PDF_CREATOR', 'HENDY ANDRIANTO');
+define ('PDF_CREATOR', '');
 
 /**
  * Document author.
  */
-define ('PDF_AUTHOR', 'HENDY ANDRIANTO');
+define ('PDF_AUTHOR', '');
 
 /**
  * Header title.
@@ -114,7 +114,7 @@ define ('PDF_HEADER_TITLE', 'TCPDF Example');
 /**
  * Header description string.
  */
-define ('PDF_HEADER_STRING', "by Hendy Andrianto - https://www.facebook.com/hackerlocalhost");
+define ('PDF_HEADER_STRING', "");
 
 /**
  * Document unit of measure [pt=point, mm=millimeter, cm=centimeter, in=inch].

@@ -5,7 +5,7 @@
 	<title>MALindo Outdoor </title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="Aplikasi Penyewaan Alat Gunung" />
-	<meta content="" name="Hendy Andrianto,https://www.facebook.com/hackerlocalhost/?ref=br_rs" />
+	<meta content="" name="js/apps.min.js" />
 	<link rel="shortcut icon" type="image/png" href="<?php echo base_url();?>logo/icon.png"/>
 	<link rel="shortcut icon" type="image/png" href="<?php echo base_url();?>logo/icon.png"/>
 	<link href="<?php echo base_url();?>assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
