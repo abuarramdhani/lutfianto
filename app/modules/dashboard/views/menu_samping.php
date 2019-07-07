@@ -1,23 +1,6 @@
 <div id="sidebar" class="sidebar">
     <div data-scrollbar="true" data-height="100%">
-        <ul class="nav">
-            <li class="nav-profile">
-                <div class="image1" style="text-align:center">
-                <?php
-                $kode   = $this->session->userdata('kode');
-                $ckuser = $this->db->get_where('tbl_username',array('kode'=>$kode));
-                $row    = $ckuser->row();
-                $nama   = $row->nama;
-                $foto   = $row->foto;
-                ?>
-                <a class="fancybox" href="<?php echo base_url();?>assets/foto/pegawai/<?php echo $foto;?>" style="width:80px;text-align:center;height:102px;" data-fancybox-group="gallery" title="<?php echo $nama;?>"><img src="<?php echo base_url();?>assets/foto/pegawai/<?php echo $foto;?>" style="width:71px;" alt="" /></a>
-            </div>
-            <div class="info" style="text-align:center">
-                <?php echo $nama;?>
-                <small>IP : <?php echo $ip=$_SERVER['REMOTE_ADDR'];?></small>
-            </div>
-        </li>
-    </ul>
+        
     <ul class="nav">
         <li class="nav-header"><div style="text-align:center"><span id="date_time"><script type="text/javascript">window.onload = date_time('date_time');</script></span></div></li>
         <li <?php if($link=="dashboard"){echo "class=\"active\"";}?>><a href="<?php echo base_url();?>dashboard"><i class="fa fa-laptop"></i> <span>Dashboard</span></a></li>

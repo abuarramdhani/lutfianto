@@ -28,8 +28,8 @@
                 </a>
                 <ul class="dropdown-menu animated fadeInLeft">
                     <li class="arrow"></li>
-                    <li><a href="<?php echo base_url();?>profile">Profile</a></li>
-                    <li class="divider"></li>
+                    <!-- <li><a href="<?php echo base_url();?>profile">Profile</a></li> -->
+                    <!-- <li class="divider"></li> -->
                     <li><a onclick="logout('<?php echo str_replace("'", "", $nama) ;?>')" href='javascript:void(0)'>Log Out</a></li>
                 </ul>
             </li>

@@ -4,7 +4,7 @@ class Set_dp extends CI_Controller {
 		parent::__construct();
 		date_default_timezone_set('Asia/Jakarta');
 		$this->load->model('set_dp_model');
-		$submenu  = "Setting Diskon";
+		$submenu  = "Setting";
 		$submenux = "Set. Uang Muka";
 		$menu     = "tools";
 		$this->service->login();
@@ -23,7 +23,7 @@ class Set_dp extends CI_Controller {
 	}
 	public function _content(){
 		$isi['kelas']       = "tools";
-		$isi['namamenu']    = "Setting Diskon";
+		$isi['namamenu']    = "Setting";
 		$isi['page']        = "set_dp";
 		$isi['link']        = 'set_dp';
 		$isi['actionhapus'] = 'hapus';

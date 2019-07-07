@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 07, 2019 at 04:12 PM
+-- Generation Time: Jul 07, 2019 at 04:42 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -115,7 +115,11 @@ INSERT INTO `malindo_session` (`urut`, `id`, `ip_address`, `timestamp`, `data`) 
 (1415, 'dnc4ueevu1r11uu7i83hqsjate6phurl', '::1', 1562508124, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323530373836313b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b6b6f6465787c733a333a22303031223b),
 (1416, '32bq8ulb7k5qcbhqq482bbnalv7l1lck', '::1', 1562508545, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323530383136373b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b6b6f6465787c733a333a22303031223b6b6f64655f6d656d6265727c733a363a224d2d30303031223b6b6f64655f7472616e73616b73695f74656d707c733a31353a223030312d504c2d4d414c2d30373139223b),
 (1417, 'q6elc764kg80f61rlldrth2d2u0o6gks', '::1', 1562508514, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323530383531343b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b6b6f6465787c733a333a22303031223b6b6f64655f6d656d6265727c733a363a224d2d30303031223b6b6f64655f7472616e73616b73695f74656d707c733a31353a223030312d504c2d4d414c2d30373139223b),
-(1419, '9j1vrv5hdbpsntou1ubepglai2hrhekb', '::1', 1562508725, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323530383539373b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b);
+(1419, '9j1vrv5hdbpsntou1ubepglai2hrhekb', '::1', 1562508725, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323530383539373b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b),
+(1420, 'v0p3pimno1tgd3dt4s1f60l6bq984ldk', '::1', 1562509473, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323530393137393b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b6b6f6465787c733a333a22303031223b),
+(1422, '1dpn6o5vmh7pbh8o9rs8qiq3fsi8efva', '::1', 1562509945, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323530393632303b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b6b6f6465787c733a333a22303031223b6b6f64655f6d656d6265727c733a363a224d2d30303031223b6b6f64655f626f6f6b696e677c733a31353a223030312d424f2d4d414c2d30373139223b),
+(1423, '5j8fakuclq0l345d5fl4id5p0str2nta', '::1', 1562510312, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323530393939383b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b6b6f6465787c733a333a22303031223b6b6f64655f6d656d6265727c733a363a224d2d30303031223b6b6f64655f626f6f6b696e677c733a31353a223030312d424f2d4d414c2d30373139223b),
+(1425, 'kqqkbftmv2k1u23ja9rl3e9o6h3ev5u2', '::1', 1562510544, 0x5f5f63695f6c6173745f726567656e65726174657c693a313536323531303438373b6c6576656c7c733a313a2230223b6c6f67696e7c623a313b736574745f7c733a313a2231223b6b6f64657c733a333a22303031223b);
 
 -- --------------------------------------------------------
 
@@ -204,13 +208,6 @@ CREATE TABLE `tbl_booking` (
   `user` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `tbl_booking`
---
-
-INSERT INTO `tbl_booking` (`id`, `kode_booking`, `kode_member`, `tgl_booking`, `tgl_perencanaan_sewa`, `tgl_selesai`, `lama`, `subtotal_poin`, `poin_bayar`, `subtotal_x`, `subtotal`, `disc_pinjam`, `disc_momen`, `total_bayar`, `dibayar`, `potongan`, `sisa_bayar`, `status_booking`, `jns_bayar`, `user`) VALUES
-(54, '001-BO-MAL-0719', 'M-0001', '2019-07-07 21:09:25', '2019-07-04', '2019-07-08', 4, NULL, NULL, 400000, 352000, 4, NULL, 352000, 11111, 0, 340889, 1, 1, '001');
-
 -- --------------------------------------------------------
 
 --
@@ -225,13 +222,6 @@ CREATE TABLE `tbl_booking_detil` (
   `qty` int(5) NOT NULL DEFAULT '0',
   `status` int(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tbl_booking_detil`
---
-
-INSERT INTO `tbl_booking_detil` (`id`, `kode_booking`, `kode_barang`, `kode_warna`, `qty`, `status`) VALUES
-(89, '001-BO-MAL-0719', 'B-0001', NULL, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -281,14 +271,14 @@ CREATE TABLE `tbl_disc` (
 --
 
 INSERT INTO `tbl_disc` (`id`, `durasi`, `disc`, `status`) VALUES
-(1, 1, 5, 1),
-(2, 2, 7, 1),
-(3, 3, 10, 1),
-(4, 4, 12, 1),
-(5, 5, 15, 1),
-(6, 6, 15, 1),
-(7, 7, 20, 1),
-(8, 8, 30, 1);
+(1, 1, 0, 1),
+(2, 2, 0, 1),
+(3, 3, 0, 1),
+(4, 4, 0, 1),
+(5, 5, 0, 1),
+(6, 6, 0, 1),
+(7, 7, 0, 1),
+(8, 8, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -90047,7 +90037,7 @@ INSERT INTO `tbl_menu` (`menu_id`, `kelas`, `nama_menu`, `link`, `icon`, `status
 (2, 'ref_data', 'Referensi Data', '#', 'fa fa-database', 1, 2),
 (3, 'master', 'Master Data', '#', 'fa fa-users', 1, 3),
 (4, 'transaksi', 'Transaksi', '#', 'fa fa-random', 1, 4),
-(5, 'laporan', 'Laporan - Laporan', '#', 'fa fa-bar-chart-o', 1, 5),
+(5, 'laporan', 'Laporan - Laporan', '#', 'fa fa-bar-chart-o', 0, 5),
 (6, 'tools', 'Tools', '#', 'fa fa-cogs', 1, 6);
 
 -- --------------------------------------------------------
@@ -90244,15 +90234,6 @@ CREATE TABLE `tbl_poin` (
   `status` int(1) NOT NULL DEFAULT '0' COMMENT '1=Aktif , 0=NoAktif'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `tbl_poin`
---
-
-INSERT INTO `tbl_poin` (`id`, `nominal_a`, `nominal_b`, `jml_poin`, `status`) VALUES
-(1, 10000, 20000, 1, 1),
-(2, 50000, 100000, 2, 1),
-(4, 150000, 200000, 3, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -90393,8 +90374,7 @@ INSERT INTO `tbl_submenu` (`smenu_id`, `parent`, `nama_smenu`, `slink`, `sicon`,
 (11, 4, 'Penyewaan', 'sewa', '#', 0, 1, 1),
 (12, 4, 'Pengembalian', 'pengembalian', '#', 0, 1, 1),
 (13, 4, 'Pemeliharaan', 'pemeliharaan', '#', 0, 1, 1),
-(14, 2, 'Papan Informasi', 'news', '#', 0, 1, 1),
-(15, 6, 'Setting Diskon', '#', '#', 1, 1, 1),
+(15, 6, 'Setting', '#', '#', 1, 1, 1),
 (16, 6, 'Background Login', 'ganti_bg', '#', 0, 1, 1),
 (17, 6, 'Hak Akses', 'hak_akses', '#', 0, 0, 1),
 (18, 6, 'Setting Email', 'set_email', '#', 0, 1, 1),
@@ -90425,9 +90405,6 @@ CREATE TABLE `tbl_submenux` (
 --
 
 INSERT INTO `tbl_submenux` (`smenu_id`, `parentx`, `nama_smenux`, `slinkx`, `siconx`, `sstatusx`, `levelx`, `urut`) VALUES
-(1, 15, 'Set. Diskon Tetap', 'disc_tetap', '#', 1, 1, 1),
-(2, 15, 'Set. Diskon Khusus', 'disc_khusus', '#', 1, 1, 1),
-(3, 15, 'Set. Poin', 'poin', '#', 1, 1, 1),
 (4, 15, 'Set. Uang Muka', 'set_dp', '#', 1, 1, 1),
 (5, 20, 'Stok Barang', 'stok_barang', '#', 1, 1, 2),
 (6, 20, 'Barang Sewa', 'lap_sewa', '#', 1, 1, 4),
@@ -90590,7 +90567,7 @@ INSERT INTO `tbl_usermenu` (`id`, `kode`, `menu`, `menux`) VALUES
 (2, 'P-0001', '2|3|4|5|6|7|10|11|12|13|', ''),
 (3, 'P-0001', '2|3|4|5|6|7|10|11|12|13|', ''),
 (4, 'P-0001', '2|3|4|5|6|7|10|11|12|13|', ''),
-(5, '001', '', '');
+(5, '001', '21|22|15|16|18|', '10|11|12|1|2|3|4|');
 
 -- --------------------------------------------------------
 
@@ -91469,19 +91446,19 @@ ALTER TABLE `tbl_warna`
 -- AUTO_INCREMENT for table `malindo_session`
 --
 ALTER TABLE `malindo_session`
-  MODIFY `urut` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1420;
+  MODIFY `urut` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1426;
 
 --
 -- AUTO_INCREMENT for table `tbl_barang_stok`
 --
 ALTER TABLE `tbl_barang_stok`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_bglogin`
 --
 ALTER TABLE `tbl_bglogin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbl_booking`
@@ -91505,13 +91482,13 @@ ALTER TABLE `tbl_bulan`
 -- AUTO_INCREMENT for table `tbl_disc`
 --
 ALTER TABLE `tbl_disc`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `tbl_disc_momen`
 --
 ALTER TABLE `tbl_disc_momen`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_email`
@@ -91523,13 +91500,13 @@ ALTER TABLE `tbl_email`
 -- AUTO_INCREMENT for table `tbl_histori_poin`
 --
 ALTER TABLE `tbl_histori_poin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_histori_poin_detil`
 --
 ALTER TABLE `tbl_histori_poin_detil`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_kabupaten`
@@ -91559,19 +91536,19 @@ ALTER TABLE `tbl_merk`
 -- AUTO_INCREMENT for table `tbl_news`
 --
 ALTER TABLE `tbl_news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_pekerjaan`
 --
 ALTER TABLE `tbl_pekerjaan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tbl_pemeliharaan`
 --
 ALTER TABLE `tbl_pemeliharaan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_pemeliharaan_detil`
@@ -91583,7 +91560,7 @@ ALTER TABLE `tbl_pemeliharaan_detil`
 -- AUTO_INCREMENT for table `tbl_pemeliharaan_foto`
 --
 ALTER TABLE `tbl_pemeliharaan_foto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_pemeliharaan_mitra`
@@ -91595,31 +91572,31 @@ ALTER TABLE `tbl_pemeliharaan_mitra`
 -- AUTO_INCREMENT for table `tbl_pemeliharaan_selesai_foto`
 --
 ALTER TABLE `tbl_pemeliharaan_selesai_foto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_pengembalian`
 --
 ALTER TABLE `tbl_pengembalian`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_pengembalian_detil`
 --
 ALTER TABLE `tbl_pengembalian_detil`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_pengembalian_foto`
 --
 ALTER TABLE `tbl_pengembalian_foto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_poin`
 --
 ALTER TABLE `tbl_poin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_propinsi`
@@ -91649,7 +91626,7 @@ ALTER TABLE `tbl_set_poin`
 -- AUTO_INCREMENT for table `tbl_submenu`
 --
 ALTER TABLE `tbl_submenu`
-  MODIFY `smenu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `smenu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `tbl_submenux`
@@ -91673,13 +91650,13 @@ ALTER TABLE `tbl_tipe`
 -- AUTO_INCREMENT for table `tbl_trans`
 --
 ALTER TABLE `tbl_trans`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_transaksi`
 --
 ALTER TABLE `tbl_transaksi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_transaksi_detil`
@@ -91691,13 +91668,13 @@ ALTER TABLE `tbl_transaksi_detil`
 -- AUTO_INCREMENT for table `tbl_trans_detil`
 --
 ALTER TABLE `tbl_trans_detil`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_trans_foto`
 --
 ALTER TABLE `tbl_trans_foto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_usermenu`
@@ -91709,7 +91686,7 @@ ALTER TABLE `tbl_usermenu`
 -- AUTO_INCREMENT for table `tbl_username`
 --
 ALTER TABLE `tbl_username`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tbl_warna`

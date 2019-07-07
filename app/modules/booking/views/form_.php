@@ -563,7 +563,7 @@
 		                            </div>
 								</div>
 							</div>
-							<div class="form-group">
+							<div class="form-group hidden">
 								<label class="control-label col-md-3 col-sm-3">Harga Poin<br/>
 								<small><font color="red">* permalam</font></small></label>
 								<div class="col-md-1 col-sm-1">
@@ -649,7 +649,7 @@
 		                            </div>
 								</div>
 							</div>
-							<div class="form-group">
+							<div class="form-group hidden">
 								<label class="control-label col-md-3 col-sm-3">Diskon Tetap</label>
 								<div class="col-md-2 col-sm-2">
 									<div class="input-group">
@@ -658,14 +658,14 @@
 		                            </div>
 								</div>
 							</div>
-							<div id="ket_disc_lama">
+							<div id="ket_disc_lama" class="hidden">
 								<div class="form-group">
 									<div class="col-md-8 col-sm-8">
 	                            		<span style="color:red;" id="ket_diskon_lama"></span>
 									</div>
 								</div>
 							</div>
-							<div class="form-group">
+							<div class="form-group hidden">
 								<label class="control-label col-md-3 col-sm-3">Diskon Khusus</label>
 								<div class="col-md-2 col-sm-2">
 									<div class="input-group">
@@ -674,7 +674,7 @@
 		                            </div>
 								</div>
 							</div>
-							<div id="ket_disc">
+							<div id="ket_disc" class="hidden">
 								<div class="form-group">
 									<div class="col-md-8 col-sm-8">
 	                            		<span style="color:red;" id="ket_diskon"></span>
@@ -719,7 +719,7 @@
 									<select name="jns_bayar" class="default-select2 form-control" id="jns_bayar" data-size="10" data-live-search="true" data-style="btn-white">
 									<option value="" selected="selected">Pilih Jenis Bayar</option>
 									<option value="1">Cash</option>
-									<option value="2">Poin</option>
+									<!-- <option value="2">Poin</option> -->
 									</select>
 								</div>
 							</div>
